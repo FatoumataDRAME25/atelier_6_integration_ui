@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+body{
+    background-color: #fff3e0;
+}
+
+header{
+    padding: 20px 8%;
+    z-index: 20;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: white;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header-nav ul{
+    display: flex;
+    gap: 60px;
+
+}
+.header-nav ul a{
+    color: black;
+    font-size: 25px;
+
+}
+.header-nav ul a:hover{
+    color: #ffb300;
+    border-bottom: 3px solid #ffb300;
+}  
+
+.btn{
+   padding: 15px 30px;
+   font-size: 20px;
+   border: none;
+   cursor: pointer;
+   background: none;     
+}
+.btn2{
+    background-color: #e65100;
+    border-radius: 10px;
+}
+
+
+
+
+.logo img{
+  max-width: 150px;
+  height: auto;
+}
+.debut{
+   background-image:  linear-gradient(#e651007f, #e6510090),url(images/banner-accueil\(1\).jpg);
+   z-index: -1;
+   mix-blend-mode: multiply;
+   padding: 0 0;
+   margin-top: 0;
+   margin-bottom:-0 ;
+   background-size: cover;
+   height: 800px;
+   width: 100%;
+   background-position: center;
+   position: relative;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+   
+}
+
+.home .left h1{
+      font-size: 50px;
+      margin:20px 30px;
+      justify-content: center;
+      color: white;
+    
+     
+     
+     
+      
+}
+
+.home .left p{
+       font-size: 25px;
+       color:white;
+       align-items: center;
+
+}
+
+.home .right img {
+      width: 500px;
+      height: 800px;
+      padding: 10px ;
+      object-fit: cover; 
+      object-position: center;
+      border-radius: 5px;
+      border: 10px solid white;
+      overflow: hidden;
+      clip-path: inset(20% 20% 20% 20%);
+      transform: rotate(-90deg);
+      margin-top: -100px;
+      margin-right: 150px;
+      
+}
+
+
+
+
+.home .left h1 span{
+    color:#b6740a;
+    
+} 
+.left{
+    margin-left: 150px;
+    margin-top: -100px;
+
+}
+    
+
+
+.right{
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 50px 50px;
+}
+.accueil{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /*4 blocs égaux */
+  gap: 0.5%;
+  margin: 20px 80px;
+  padding:10px 50px;
+  
+}
+
+.info {
+  background: white;
+  border-radius: 12px;
+  padding: 60px 50px;
+  text-align: center;
+  margin: 50px 60px;
+  min-width:250px ;
+
+
+  /* même hauteur */
+  min-height: 120px;
+
+  /* centrage du contenu */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info p{
+    font-size: 16px;
+}
+.info h2{
+    color: #e05910;
+    font-size: 40px;
+}
+
+
+.service{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    background-color: white;
+    
+    
+}
+.service .service1{
+    margin: 20px 50px; 
+    margin-bottom: -40px;
+}
+.service h1{
+    color: black;
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+    
+}
+.service .para{
+    font-size: 20px;
+    margin-left: -150px;
+
+}
+.service .box-services{ 
+      display: flex; 
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 20px;
+      padding: 100px 40px;
+      gap: 50px;
+      
+      
+
+}
+
+.service .box-services .box{
+    border: 1px solid transparent;
+    border-radius: 15px;
+    padding: 60px 50px;
+    
+}   
+.service .box-services .box h2{
+    color: #815104;
+    font-size: 30px;
+}
+.service .box-services .box .p1{
+    font-size: 20px;
+    color: #b6740ad2;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.service .box-services .box button{
+    font-size: 16px;
+    color: #ffb300;
+    cursor: pointer;
+    border: none;
+    background: none;
+
+}
+
+.service .box-services .box1{
+    background: #ffb3003a;
+}
+.service .box-services .box2{
+    background: #ffb30010;
+}
+.proximite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 20px;
+}
+.proximite h1{
+    margin-bottom: 20px;
+    padding-bottom: 10px 0;
+    
+
+}
+.proximite .localisation{
+    border-radius: 15px; 
+    overflow: hidden;
+    margin-top: 20px;
+}
+.avis-clients{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 50px;
+    
+}
+.avis-clients h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.avis-clients  .commentaires{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.avis-clients .commentaires .avis{
+    border: 2px solid rgba(0, 0, 0, 0.032);
+    border-radius: 8px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.36);
+}
+.avis-clients .commentaires .avis p{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.avis-clients .commentaires .avis .nom{
+    font-size: 25px;
+   /* margin-bottom: 15px; */
+}
+.avis-clients .commentaires .avis .nom span{
+    border: 1px solid #ffb300;
+    border-radius: 100%;
+    padding: 10px;
+    margin-bottom: 40px;
+    
+}
+.nom .fatou{
+     background-color: #999;
+}
+.nom .mamadou{
+     background-color:#e05910;
+}
+.nom .aissatou{
+     background-color:#ffb300;
+}
+.nom .ousmane{
+     background-color: green;
+}
+.f1{
+    margin-left: 60px;
+    color: #ffb300ab;
+}
+.f2{
+    color: #ffb300ab;
+}
+.f3{
+    color: #ffb300a6;
+}
+.f4{
+    color: #ffb300ab;
+}
+.f5{
+    color: #ffb300ab;
+}
+.f6{
+    color: #999;
+}
+.commande{
+    padding: 100px 100px;
+    background-image: linear-gradient(rgba(202, 89, 2, 0.795), rgba(129, 59, 5, 0.769)),url(images/banner-accueil\(1\).jpg);
+    mix-blend-mode: multiply;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    
+}
+.commande .pret{
+    margin-left: 400px;
+}
+.commande h1{
+    margin-bottom: 20px;
+    font-size: 60px;
+    padding: 10px 10px;
+    color: white;
+}
+.commande p{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: white;
+}
+.commande button{
+    font-size: 30px;
+    padding: 30px 30px;
+    background: white;
+    border: white;
+    border-radius: 10px;
+    margin-left: 200px;
+    color:#e05910;
+    cursor: pointer;
+}
+.informations{
+    background-color: rgb(4, 4, 39);
+    margin: 0 0;
+    
+}
+.bloc{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+     padding: 50px 60px; 
+     border-bottom: 0.5px solid rgba(255, 255, 255, 0.154);
+    
+}
+.bloc .bloc1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start; 
+    color: white;
+    
+    
+}
+.bloc .bloc1 span{
+    text-align: right;
+    color: white;
+    margin-top: 3px;
+    font-size: 20px;
+
+}    
+.bloc .bloc1 strong{
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.bloc2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 20px;
+    
+}
+.bloc1 #monSpan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}

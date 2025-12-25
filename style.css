@@ -718,10 +718,9 @@ form{
     display: flex;
     gap: 100px;
     align-items: start;
-    margin-top: 20px;
     
 }
-.listte1{
+.listte{
     display: flex;
     flex-direction: column;
     

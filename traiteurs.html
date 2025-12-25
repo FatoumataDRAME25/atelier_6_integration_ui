@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuisine</title>
+    <title>Traiteurs</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c0a30635fd.js" crossorigin="anonymous"></script>
 </head>
@@ -12,26 +13,155 @@
     <header>
         <div class="menu">
             <div class="logo">
-            
-                 <img src="images/logo(2).png" alt="L'image du logo">
-                
+
+                <img src="images/logo(2).png" alt="L'image du logo">
+
             </div>
-    
+
             <nav class="header-nav">
                 <ul>
                     <li><a href="#Acceuil"> Acceuil</a></li>
                     <li><a href="#Restaurants"> Restaurants</a></li>
-                    <li><a href="#Cmenu"> Cours de Cuisine</a></li>
+                    <li><a href="#Cours"> Cours de Cuisine</a></li>
                     <li><a href="#Traiteurs"> Traiteur</a></li>
                     <li><a href="#Contact"> Contact</a></li>
-                </ul>  
+                </ul>
             </nav>
-    
+
             <div class="header-btn">
                 <button class="btn btn1">Connexion</button>
-                <button class="btn btn2">Inscription</button>
+                <button class="btn btn2"> <a href="formulaire.html">Inscription</a></button>
             </div>
         </div>
-    </header>    
+    </header>
+    <section class="decouverte">
+        <div class="deco">
+            <h1>Nos traiteurs</h1>
+            <p>Decouvrez nos traiteurs professionnels pour vos evenements, mariages, baptemes et receptions</p>
+        </div>
+    </section>
+    <section class="plats">
+       
+            <div class="profil">
+                <strong>Filtres</strong>
+                <div class="profilleft">
+                    <div class="meta">
+                        <span> Specialite</span>
+                        <select name="specialites" id="specialites">
+                        <option value="Special">Toutes les specialites</option>
+                        </select>
+                    </div>
+                    <div class="meta">
+                        <span>Statut</span>
+                        <select name="status" id="status">
+                        <option value="Special">Tous les status</option>
+                        </select>
+                    </div>
+                    <div class="ortho">
+                        <button class="btn3"><i class="fa-solid fa-filter"></i>Filtrer</button>
+                    
+                    </div>
+                    <div class="ortho">
+                        <button class="btn4"> <i class="fa-solid fa-arrows-rotate"></i>Reinitialiser</button>
+                    
+                    </div>
+
+                </div>
+                
+            </div>
+          
+    </section>
+    <section class="burgeur">
+        <div class="plat">
+            <div class="haut">
+                    <img src="images/chaructier-traiteur-evenements.jpg" alt="plat d'emburgeur">
+                    <div class="ecriture">
+                        <span><i class="fa-solid fa-circle"></i> 1979 ans d'experience</span>
+                        <span>Nam ex nulla similiq</span>
+                        <strong>Specialites:</strong>
+                        <div class="btn5">
+                            <button>Francaise</button> 
+                            <button>Indienne</button>
+                        </div>
+                        <span> <i class="fa-solid fa-phone"></i> +1(684) 758-7777</span>
+                    </div>
+                    <div class="droite">
+                        <i class="fa-solid fa-star"><span>0.0</span></i>
+                    
+                         <button class="btn6">voir le profil</button>
+                       
+                    </div>
+                
+            </div>
+                
+                
+            
+            
+            <div class="haut">
+                    <img src="images/traiteur-33.jpg" alt="des traiteurs">
+                    <div class="ecriture">
+                        <span><i class="fa-solid fa-circle"></i> 2016 ans d'experience</span>
+                        <span>Perspiciatis quia a</span>
+                        <strong>Specialites:</strong>
+                        <div class="btn5">
+                           <button >Japonaise</button>
+                        </div>
+                        <span> <i class="fa-solid fa-phone"></i> +1(481) 253-6005</span>
+                    </div>
+                    
+                    <div class="droite">
+                        <i class="fa-solid fa-star"><span>0.0</span></i>
+                        <button class="btn6">voir le profil</button>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="commande">
+        <div class="pret">
+            <h1>Vous etes traiteurs</h1>
+            <p>Rejoignez notre reseau et developpez votre activite evenementielle!</p>
+            <div>
+                <button>Devenir traiteur!</button>
+            </div>
+        </div>
+    </section>
+    <footer class="informations">
+        <div class="bloc">
+            <div class="bloc1">
+                <strong>A propos</strong>
+                <span>Qui sommes-nous</span>
+                <span>Contact</span>
+                <span>Mentions legales</span>
+                <span>Politique de confidetialite</span>
+            </div>
+            <div class="bloc1">
+                <strong>Services</strong>
+                <span>Traiteurs</span>
+                <span>Restaurants</span>
+                <span>Cours de Cuisine</span>
+            </div>
+            <div class="bloc1">
+                <strong>Espace Pro</strong>
+                <span>Devenir partenaire</span>
+                <span>Connexion</span>
+                <span>FAQ Professionnels</span>
+            </div>
+            <div class="bloc1">
+                <strong>Contact</strong>
+                <span>Star Buffet</span>
+                <span>Dakar, Senegal</span>
+                <span>Tel: +221770000000</span>
+                <span>Email: contact@starbuff.com</span>
+                <span id="monSpan"><i class="fa-brands fa-facebook"></i><i
+                        class="fa-brands fa-square-instagram"></i></span>
+            </div>
+        </div>
+        <div class="bloc2">
+            <p>&copy; 2025 Star Buffet. Tous droits reserves</p>
+        </div>
+
+    </footer>
+
 </body>
+
 </html>

@@ -787,7 +787,6 @@ form{
     margin: auto;  
     padding: 30px; 
     width: 50%;
-    /* height: 200px;  */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -833,16 +832,14 @@ form{
 /* Mise en forme de linterface "detail-traiteur" */
 
 #salade{
-    margin: 20px 0;
-    /* height: auto;
-    width: auto; */
+    margin: 10px 0;
 } 
 #salade .image-de-fond{
     background-image: url(images/salade.jpeg);
     background-size: cover;
     height: 600px; 
     background-position: center;
-    margin: 100px;
+    margin: 0 100px;
     position: relative;
     border-radius: 15px;
     
@@ -866,3 +863,168 @@ form{
     color: green;
     margin-right: 5px;
 }
+/* Mise en forme de la section informations du fichier detail-traiteur */
+#informations{
+    margin:0 10px;
+    position: relative;
+    height: auto;
+    padding-bottom: 8%;
+  
+}
+.info-generale{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    margin-right: 70px; 
+    margin-left: 70px;
+    
+}
+/* Mise en de la premiere partie de cette section */
+.info-du-plat{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.a-propos{
+    margin: 20px; 
+    padding: 25px;
+    border: 2px solid rgba(0, 0, 0, 0.026);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.805);
+}
+.a-propos p{
+    margin-top: 15px;
+}
+.fran-ind{
+    margin: 20px; 
+    padding: 24px;
+    border: 2px solid rgba(0, 0, 0, 0.026);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.805);
+}
+.fran-ind p{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+.fran-ind p span{
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #99999935;
+}
+.points-forts{
+    margin: 20px; 
+    padding: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.026);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.805);
+}
+.points-forts .colonne {
+    display: flex;
+    gap: 400px;
+    align-items: start;
+}
+.points-forts .colonne  p{
+    margin-top: 15px;
+}
+.points-forts .colonne  p i{
+    color: rgb(3, 189, 3);
+    margin-right: 10px;
+}
+/* Mise en page de sa deuxieme partie */
+.des-contacts{
+    width: 30%;
+    height: 575px; 
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: start;
+    
+    
+}.des-contacts .appel{
+    margin-top: 18px;  
+    padding: 40px 150px;
+    border: 2px solid rgba(0, 0, 0, 0.026);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.805);
+    width: 100%;
+}
+.des-contacts .appel strong{
+    margin-left: -110px;
+}
+.des-contacts .appel p{
+    margin-top: 15px;
+    text-align: start;
+    margin-left: -110px; 
+}
+.des-contacts .appel p i{
+    margin-right: 10px;
+}
+.date{
+     margin-top: 18px;  
+    padding: 30px ;
+    border: 2px solid rgba(0, 0, 0, 0.026);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.805);
+    width: 100%;
+}
+.date p{
+    margin-top: 15px;
+    text-align: start;
+    
+}
+.date p i{
+     margin-right: 10px;
+}
+.lang-parle{
+    margin-top: 18px;  
+    padding: 30px ;
+    border: 2px solid rgba(0, 0, 0, 0.026);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.805);
+    width: 100%;
+}
+.p-span{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+.p-span span{
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #99999935;
+}
+.btn-contacter{
+    
+    margin-top: 18px;  
+    padding: 30px ;
+    border: 2px solid rgba(0, 0, 0, 0.026);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.805);
+    width: 100%;
+    
+}
+
+.btn-contacter .contacter{
+    cursor: pointer;
+    /* margin-left: 5px;  */
+    padding: 15px 130px;
+    font-size: 25px;
+    background-color: rgba(13, 50, 237, 0.845);
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    color: white;
+   
+    /* gap: 10;  */
+}
+.btn-contacter .contacter i{
+    margin-right: 10px;
+    font-size: 25px;
+}  

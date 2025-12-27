@@ -1033,38 +1033,43 @@ form{
 /* Mise en forme du fichier dashbod.html */
 
 #layout{
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 2fr 8fr;
     grid-template-areas:
     "sidebar contenu"
 }
-.sidebar{
-    background-color: #782c03;
-    height: 100vh;
-}
-.sidebar .menu-resto{
+
+.sidebar {
     display: flex;
+     background-color: #924010;
+     justify-content: space-between;
     flex-direction: column;
     gap: 30px; 
     align-items: start;
-    margin-top: 10px;
-    margin-left: 10px;
+   
 }
-.info-resto ul{
+.logo-dash{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.logo-dash ul{
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 25px;
 }
-.info-resto ul a{
-    color: #efcb91;
-    font-size: 25px;
+.logo-dash ul a{
+    color: #edd8a6;
+    font-size: 40px;
 
 }
-.info-resto ul a i{
+.logo-dash ul a i{
     margin-right: 10px;
+    color: #edd8a6;
 }
-.info-resto ul a:hover{
+.logo-dash ul a:hover{
     color: white;
     border-bottom: 3px solid white;
 }  
@@ -1077,15 +1082,23 @@ form{
 }
 .button-resto button{
   
-   font-size: 25px;
+   font-size: 40px;
    border: none;
    cursor: pointer;
    background: none;
-   color: #efcb91;  
+   color:#edd8a6;  
 
 }
 .button-resto button i{
     margin-right: 10px;
+    color:  #edd8a6;
+}
+.button-resto .button1{
+    border-top: 2px solid  #efcb91;
+    border-bottom: 2px solid  #efcb91;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    
 }
 
 .logo-dash img{
@@ -1093,103 +1106,137 @@ form{
   height: auto;
 }
 .contenu{
-    background-color: #999;
-    height: 100vh;
+    display: grid;
+    grid-template-rows: 150px 160px minmax(160px,auto);
+    background-color: #f9fafc;
     margin: 0;
-}
-
-
-.partie1{
-    background-color: white; 
     width: 100%;
-    height: 30%;
-    margin: auto;
+    grid-gap: 20px;
+    padding: 10px 150px;
+}
+.texte-alerte{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    /* margin-top: 20px; */
+}
+.alerte{
+    display: grid;
+    font-size: 25px;
     
 }
-.partie1 .resto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    align-items: start;
-    margin: 0 50px;
-    
-    
+
+.texte-alerte p button{
+    padding: 20px 40px;
+    font-size: 25px;
+    background-color:#d87706;
+    color: white;
+    border-radius: 5px;
+    border: none;
 }
-.partie1 .resto .texte-alerte{
-    display: flex;
-    gap: 1000px;
+.selection{
+    display: grid;
+    grid-template-columns:9fr 1fr;
     align-items: center;
-    /* border: 1px solid #999999a5; */
+    gap: 15px;
+    border: 0.5px solid #cccccc48;
+    border-radius: 5px
    
-}
-.partie1 .resto .texte-alerte p {
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-    align-items: start;
-    margin-left: 50px; 
 
 }
-.partie1 .resto .texte-alerte p button{
-    padding: 12px 30px;
-    text-align: start;
-    margin-left: -130px;
-    background-color: #e05910;
+.selecte label{
+    font-size: 30px;
+    margin-left: 20px;
+}
+select{
+   width: 100%;
+   padding: 20px;
+   font-size: 30px;
+   margin-left: 20px;
+   background-color: #f9fafc;
+   border-radius: 10px;
+   border:1px solid #ccc;
+    
+}
+/* select option{
+    
+} */
+.btn-selection button{
+    padding: 26px 40px;
+    margin-top: 30px;
+    color: white;
+    background-color: #d87706;
     font-size: 20px;
     border: none;
     border-radius: 5px;
-    color: wheat;
-}
-.selection {
-    display: flex;
-    align-items: center;
-    gap: 20px; 
-    border-radius: 5px;
-     border: 1px solid rgba(0, 0, 0, 0.068); 
-    padding: 30px 5%;
-    margin-left: 50px;
-    margin-right: 50px;
-    
-    
-}
-
-.selection .para-selecte{
-   display: flex;
-   flex-direction: column;
-   gap: 10px;
-   margin-left:-50px
-
-}
-.para-selecte select {
-    padding: 10px 520px ;
-    font-size: 20px;
-   
-    
-}
-.selection p button{
-    padding: 10px 15px;
-    margin-top: 20px;
     margin-left: 30px;
-    border: none;
-    background-color:#e8621a;
-    border-radius: 3px;
-    color: wheat;
-
 }
+
+
 .zone{
-    background-color: green;
+    
+    /* background-color: green; */
     width: 100%;
-    height: 70%;
     
 }
 table {
   border-collapse: collapse;
+  width: 100%;
+  border-left: 1px solid #cccccc52;
+  border-right: 1px solid #cccccc52;
+  border-top: 1px solid #cccccc00;
+  
+ 
 }
 
-td, th {
-  border-bottom: 1px solid #ccc;
+td{
+  border-bottom: 1px solid #cccccc52;
+  padding: 40px 60px;  /*vertical | horizontal */ 
+  font-size: 25px ;
+  text-align: left;
+ 
+  
 }
-td, th {
-  padding: 30px 60px; /* vertical | horizontal */
+th{
+    text-align: left;
+    font-size: 25px;
+    padding-left: 60px;
+    
+    
 }
+
+.verifier{
+    border-radius: 100px;
+    color: #74a686;
+    padding: 4px 15px;
+    background-color: #a1d1b0;
+    
+}
+.attente{
+    border-radius: 100px;
+    color:#9e7d43;
+    padding: 4px 5px;
+    background-color: #f7ecb2;
+    
+}
+td .modifier{
+    color: rgb(5, 73, 231);
+    margin-right: 15px;
+}
+td .supprimer{
+    color: red;
+}
+
+th img{
+    border-radius: 100%;
+    /* background-color: red; */
+    height: 50px;
+    width: 50px; 
+}
+th p{
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+       
+}
+

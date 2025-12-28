@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaires</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
     <script
       src="https://kit.fontawesome.com/c0a30635fd.js"
       crossorigin="anonymous"
@@ -15,7 +15,7 @@
     <header>
       <div class="menu">
         <div class="logo">
-          <img src="images/logo(2).png" alt="L'image du logo" />
+          <img src="images/logo(2).png" alt="L'image du logo">
         </div>
 
         <nav class="header-nav">
@@ -44,30 +44,30 @@
       </div>
     </section>
     <section id="inscription">
-      <form action="">
+      <form>
         <div class="formulaires">
           <div class="info-perso">
             <span>Informations de base</span>
             <div class="nom-email">
               <div class="prenom">
                 <label for="prenom">Nom complet</label>
-                <input type="text" />
+                <input type="text" name="nom-complet" id="prenom">
               </div>
               <div class="prenom">
                 <label for="email">Email</label>
-                <input type="email" class="colore" />
+                <input type="email" class="colore" name="email" id="email">
               </div>
             </div>
             <div class="password">
               <div class="mot-de-passe">
-                <label for="mot-de-passe">Mot de passe</label>
-                <input type="mot-de-passe" class="colore" />
+                <label for="password">Mot de passe</label>
+                <input type="password" class="colore" id="password">
               </div>
               <div class="mot-de-passe">
-                <label for="confirm-mot-de-passe"
+                <label for="confirm-password"
                   >Confirmer le mot de passe</label
                 >
-                <input type="mot-de-passe" />
+                <input type="number" id="confirm-password">
               </div>
             </div>
           </div>
@@ -86,44 +86,44 @@
             </div>
             <div class="annee-experience">
               <label for="annee">Annee d'experience</label>
-              <input type="annee" />
+              <input type="number" id="annee">
             </div>
             <div class="description">
               <label for="description">Description</label>
-              <input type="text" />
+              <input type="text" name="description" id="description">
             </div>
             <div class="services-proposes">
               <p>Services proposes</p>
               <div class="item">
                 <div class="liste">
                   <div>
-                    <input type="checkbox">
+                    <input type="checkbox" id="mariage">
                     <label for="mariage">Mariage</label>
                   </div>
                   <div>
-                    <input type="checkbox">
+                    <input type="checkbox" id="evenements">
                     <label for="evenements">Evenements d'entreprise</label>
                   </div>
                   <div>
-                    <input type="checkbox">
+                    <input type="checkbox" id="buffets">
                     <label for="buffets">Buffets</label>
                   </div>
                   <div>
-                    <input type="checkbox">
+                    <input type="checkbox" id="cuisine">
                     <label for="cuisine">Cuisine sur mesure</label>
                   </div>
                 </div>
                 <div class="liste">
                   <div>
-                    <input type="checkbox">
+                    <input type="checkbox" id="anniversaire">
                     <label for="anniversaire">Anniveraire</label>
                   </div>
                   <div>
-                    <input type="checkbox">
+                    <input type="checkbox" id="cocktail">
                     <label for="cocktail">Coktails</label>
                   </div>
                   <div>
-                    <input type="checkbox">
+                    <input type="checkbox" id="diners">
                     <label for="diners">Diners prives</label>
                   </div>
                 </div>
@@ -136,11 +136,11 @@
             <div class="tel-adresse">
               <div class="tel">
                 <label for="telephone">Telephone</label>
-                <input type="numero">
+                <input type="number" id="telephone">
               </div>
               <div class="adresse">
                 <label for="adreese">Adresse</label>
-                <input type="text">
+                <input type="text" name="adreese" id="adreese">
               </div>
             </div>
           </div>

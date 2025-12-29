@@ -1085,14 +1085,16 @@ form{
 
 }
 .button-resto button i{
-    margin-right: 10px;
+    /* margin-right: 10px; */
     color:  #edd8a6;
 }
-.button-resto .button1{
+.button-resto .button{
     border-top: 2px solid  #efcb91;
     border-bottom: 2px solid  #efcb91;
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 20px; 
+    width: 20vw ; 
+    margin-left: -100px;
     
 }
 
